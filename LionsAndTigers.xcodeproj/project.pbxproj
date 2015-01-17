@@ -14,6 +14,9 @@
 		3565F8F71A686DF0003B086F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3565F8F61A686DF0003B086F /* Images.xcassets */; };
 		3565F8FA1A686DF0003B086F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3565F8F81A686DF0003B086F /* LaunchScreen.xib */; };
 		3565F9061A686DF0003B086F /* LionsAndTigersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3565F9051A686DF0003B086F /* LionsAndTigersTests.m */; };
+		3565F9111A68750B003B086F /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3565F9101A68750B003B086F /* TopViewController.m */; };
+		3565F9141A68751C003B086F /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3565F9131A68751C003B086F /* HUDViewController.m */; };
+		3565F9171A6885C2003B086F /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3565F9161A6885C2003B086F /* CustomCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		3565F8FF1A686DF0003B086F /* LionsAndTigersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LionsAndTigersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3565F9041A686DF0003B086F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3565F9051A686DF0003B086F /* LionsAndTigersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LionsAndTigersTests.m; sourceTree = "<group>"; };
+		3565F90F1A68750B003B086F /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		3565F9101A68750B003B086F /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		3565F9121A68751C003B086F /* HUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
+		3565F9131A68751C003B086F /* HUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
+		3565F9151A6885C2003B086F /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		3565F9161A6885C2003B086F /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +92,15 @@
 			children = (
 				3565F8ED1A686DF0003B086F /* AppDelegate.h */,
 				3565F8EE1A686DF0003B086F /* AppDelegate.m */,
+				3565F90F1A68750B003B086F /* TopViewController.h */,
+				3565F9101A68750B003B086F /* TopViewController.m */,
+				3565F9121A68751C003B086F /* HUDViewController.h */,
+				3565F9131A68751C003B086F /* HUDViewController.m */,
 				3565F8F01A686DF0003B086F /* ViewController.h */,
 				3565F8F11A686DF0003B086F /* ViewController.m */,
 				3565F8F31A686DF0003B086F /* Main.storyboard */,
+				3565F9151A6885C2003B086F /* CustomCollectionViewCell.h */,
+				3565F9161A6885C2003B086F /* CustomCollectionViewCell.m */,
 				3565F8F61A686DF0003B086F /* Images.xcassets */,
 				3565F8F81A686DF0003B086F /* LaunchScreen.xib */,
 				3565F8E91A686DF0003B086F /* Supporting Files */,
@@ -219,7 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3565F9141A68751C003B086F /* HUDViewController.m in Sources */,
+				3565F9111A68750B003B086F /* TopViewController.m in Sources */,
 				3565F8F21A686DF0003B086F /* ViewController.m in Sources */,
+				3565F9171A6885C2003B086F /* CustomCollectionViewCell.m in Sources */,
 				3565F8EF1A686DF0003B086F /* AppDelegate.m in Sources */,
 				3565F8EC1A686DF0003B086F /* main.m in Sources */,
 			);

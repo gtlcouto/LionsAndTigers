@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "TopViewController.h"
+#import "HUDViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <TopDelegate>
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftTopViewContainerConstrain;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightTopViewContainerConstrain;
+@property TopViewController * tvc;
+@property HUDViewController * hvc;
+
 
 @end
 
@@ -16,7 +23,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.tvc.delegate = self;
+    self.hvc.delegate = self.tvc;
+
+}
+
+-(void)topRevealButtonTapped
+{
+    if (self.leftTopViewContainerConstrain.constant > 10) {
+        self.leftTopViewContainerConstrain.constant -= 70;
+    } else
+    {
+    self.leftTopViewContainerConstrain.constant += 70;
+    }
+
+    
+
+}
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString * segueName = segue.identifier;
+    if ([segueName isEqualToString: @"navSegue"]) {
+        UINavigationController * myNavController = segue.destinationViewController;
+        self.tvc = [myNavController.viewControllers objectAtIndex:0];
+
+    }
+    if ([segueName isEqualToString: @"hudSegue"]) {
+        self.hvc = segue.destinationViewController;
+
+    }
 }
 
 
